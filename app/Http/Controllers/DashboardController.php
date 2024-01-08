@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    priate PostRepositoryInterface $postRepository;
+    private PostRepositoryInterface $postRepository;
 
     public function _construct(PostRepositoryInterface $postRepository)
     {
         $this->postRepository = $postRepository;
     }
 
-    public functionn index()
+    public function index()
     {
         $data = [
             'posts' => $this->postRepository->getAllPosts()

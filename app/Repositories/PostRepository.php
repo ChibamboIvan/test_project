@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositorie;
+namespace App\Repositories;
 
 use App\Interfaces\PostRepositoryInterface;
 use App\Models\Post;
