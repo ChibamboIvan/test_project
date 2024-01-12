@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     private PostRepositoryInterface $postRepository;
 
-    public function _construct(PostRepositoryInterface $postRepository)
+    public function __construct(PostRepositoryInterface $postRepository)
     {
         $this->postRepository = $postRepository;
     }
